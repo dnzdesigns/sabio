@@ -208,8 +208,8 @@ input[value="8"]:checked ~ .main-content .carousel li:nth-child(8) img { -webkit
 /* HOME PAGE */
 
 #main-content .container {
-    box-shadow: 0 0 50px #f6b319;
-    border: 2px solid #f6b319;
+    box-shadow: 0 0 50px #eaad1c;
+    border: 2px solid #eaad1c;
 }
 /*
 .row {
@@ -222,8 +222,8 @@ input[value="8"]:checked ~ .main-content .carousel li:nth-child(8) img { -webkit
     margin-top: 15px;
 	margin-bottom: 15px;
 	position: relative;
-	border: 1px solid #eaad1c;
-    border-radius: 0 0 7px 7px;
+	border: 2px solid #eaad1c;
+    border-radius: 7px;
 	overflow: hidden;
 }
 
@@ -232,7 +232,7 @@ input[value="8"]:checked ~ .main-content .carousel li:nth-child(8) img { -webkit
 }
 
 #banner-tile {
-	background: url('../images/banner.jpg') no-repeat;    
+	/*background: url('../images/banner.jpg') no-repeat;    */
 	background-position: center;
 }
 
@@ -242,18 +242,18 @@ input[value="8"]:checked ~ .main-content .carousel li:nth-child(8) img { -webkit
 	background-position: center;    
 }
 
-#bcards-tile .image img {
+.image img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 50%;
+  height: 60%;
   text-align: center;
   font-size: 1em;
   /*text-transform: uppercase*/;
   background-color: #000;
   color: #fff;
-  /*opacity: .8;*/
+  opacity: .8;
 }
 
 #banner-tile span, #bcards-tile span, #map-tile span {
@@ -261,12 +261,59 @@ input[value="8"]:checked ~ .main-content .carousel li:nth-child(8) img { -webkit
   bottom: 0;
   right: 0;
   width: 100%;
-  height: 50%;
+  height: 40%;
   text-align: center;
-  font-size: 1em; 
-  background-color:  #eaad1c;
+  padding: 2px;
+  font-size: 1.1em;
+  font-style: italic;
+  /*background-color:  #eaad1c;*/
+  background-color:  #fff;
   color: #000;
   opacity: .6;
+}
+
+
+.button {
+	-moz-box-shadow: 3px 4px 0px 0px #08091e;
+	-webkit-box-shadow: 3px 4px 0px 0px #08091e;
+	box-shadow: 3px 4px 0px 0px #08091e;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #eaac1c), color-stop(1, #08091e));
+	background:-moz-linear-gradient(top, #eaac1c 5%, #08091e 100%);
+	background:-webkit-linear-gradient(top, #eaac1c 5%, #08091e 100%);
+	background:-o-linear-gradient(top, #eaac1c 5%, #08091e 100%);
+	background:-ms-linear-gradient(top, #eaac1c 5%, #08091e 100%);
+	background:linear-gradient(to bottom, #eaac1c 5%, #08091e 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#eaac1c', endColorstr='#08091e',GradientType=0);
+	background-color:#eaac1c;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #eaac1c;
+	display:block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:16px;
+	font-weight:bold;
+	font-style:italic;
+	margin: 8px 8% 8px 8%;
+	padding:12px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #fff;
+}
+.button:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #08091e), color-stop(1, #eaac1c));
+	background:-moz-linear-gradient(top, #08091e 5%, #eaac1c 100%);
+	background:-webkit-linear-gradient(top, #08091e 5%, #eaac1c 100%);
+	background:-o-linear-gradient(top, #08091e 5%, #eaac1c 100%);
+	background:-ms-linear-gradient(top, #08091e 5%, #eaac1c 100%);
+	background:linear-gradient(to bottom, #08091e 5%, #eaac1c 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#08091e', endColorstr='#eaac1c',GradientType=0);
+	background-color:#08091e;
+}
+.button:active {
+	position:relative;
+	top:1px;
 }
 /* END HOME PAGE */
 
@@ -285,6 +332,9 @@ input[value="8"]:checked ~ .main-content .carousel li:nth-child(8) img { -webkit
 
 
 @media (min-width: 768px) and (max-width:991px){
+	#myCarousel {
+		width: 100%;
+	}
 
 }
 
@@ -317,6 +367,12 @@ input[value="8"]:checked ~ .main-content .carousel li:nth-child(8) img { -webkit
     width: 360px;
     margin: 0 auto 15px;
   }
+  #myCarousel {
+	  width: 100%;
+  }
+  #map-tile {
+	  width: 100%;
+  }
 }
 
 @media (max-width: 479px){
@@ -324,8 +380,11 @@ input[value="8"]:checked ~ .main-content .carousel li:nth-child(8) img { -webkit
         padding-top: 5px;
         font-size: 6vw;
     }
-    #banner-tile, #bcards-tile {
-        width: 280px;
+	#myCarousel {
+		width: 100%;
+	}
+    #banner-tile, #bcards-tile, #map-tile {
+        width: 100%;
         margin: 0 auto 15px;
     }
 }
