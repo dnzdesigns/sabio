@@ -1,22 +1,22 @@
+html {
+  height: 100%;
+}
 body {
   font-size: 16px;
-  color: #fff;
-  background-color: #08091e;
-  font-family: 'Oxygen', sans-serif;
+ color: #fff;
+  height: 100%;
+  background-color: #fff;
 }
 
 /** HEADER  **/
 #header-nav {
-  background-color:  #eaad1c;
+  background-color:  #08091e;
   border-radius: 0;
   border: 0;
 }
 
 #logo-img {
-  background-color: #08091e;
-  /*background: url('../images/Sabio-BG-1.png') no-repeat;
-  width: 184px;
-  height: 99px;*/
+  /*background-color: #08091e;*/
   margin: 10px 15px 10px 0;
 }
 
@@ -26,11 +26,11 @@ body {
 
 .navbar-brand h1 {
   font-family: impact, 'Lora', serif;
-  color: #000;
+  color: #eaad1c;
   font-size: 1.5em;
   text-transform: uppercase;
   font-weight: bold;
-  text-shadow: 2px 2px 2px #fff;
+  /*text-shadow: 2px 2px 2px #fff;*/
   margin-top: 0;
   margin-bottom: 0;
   line-height: .75;
@@ -40,12 +40,16 @@ body {
 }
 .navbar-brand p {
   color: #000;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   font-size: .7em;
   margin-top: 15px;
 }
 .navbar-brand p span {
-    vertical-align: middle;
+    /*vertical-align: middle;*/
+		font-size: 1.3em;
+    font-style: italic;
+    font-weight: bold;
+    color:#d1d2d4;
 }
 
 #nav-list {
@@ -56,14 +60,14 @@ body {
     text-align: center;
 }
 #nav-list a:hover {
-    background: #E7E7E7;
+    background: #d1d2d4;
 }
 #nav-list a span{
     font-size: 1.8em;
 }
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar{
-    border: 1px solid #08091e;
+    border: 1px solid #eaad1c;
 }
 
 .navbar-header button.navbar-toggle {
@@ -86,10 +90,6 @@ font-family: Impact, 'Oswald', sans-serif;
 font-size: 28px;
 font-weight: normal;
 color: #eaad1c;
- /*
-
- font-family: 'Questrial', sans-serif;*/
-
 }
 
 figure {
@@ -106,21 +106,21 @@ figure {
 	height: 300px;
 	text-align: left;
 	margin: 60px auto;
-    perspective: 1000px;
+  perspective: 1000px;
 	-webkit-perspective: 1000px;
 	-webkit-perspective-origin-y: -25%;
 }
 
 .carousel {
-    transform-style: preserve-3d;
+  transform-style: preserve-3d;
 	-webkit-transform-style: preserve-3d;
-    transform: translateZ(-540px);
+  transform: translateZ(-540px);
 	-webkit-transform: translateZ(-540px);
 	position: relative;
 	margin: 0;
 	width: 500px;
 	height: 300px;
-    transition: 1s;
+  transition: 1s;
 	-webkit-transition: 1s;
 }
 
@@ -128,7 +128,7 @@ figure {
 	position: absolute;
 	border: 15px solid rgba(8, 9, 30, .8);
 	opacity: .5;
-    transition: 1s;
+  transition: 1s;
 	-webkit-transition: 1s;
 }
 
@@ -151,6 +151,11 @@ figure {
 	padding-top: 7px;
 	height: 23px;
 	font: .9em Arial;
+}
+
+.row .banner-item-photo {
+  /*border-radius: 250px;*/
+  border: 4px solid #ddd;
 }
 
 .content label:hover {
@@ -191,49 +196,65 @@ figure {
 .panel-footer {
   margin-top: 30px;
   padding-top: 35px;
-  padding-bottom: 30px;
-  background-color: rgba(0,0,0,.8);
+  padding-bottom: 0px;
+  /*background-color: rgba(0,0,0,.4);*/
+  background-color: #000;
   border-top: 0;
 }
 .panel-footer div.row {
-  margin-bottom: 35px;
+  margin-bottom: 0px;
 }
-#hours, #address {
-  line-height: 2;
+#navigation, #address {
+  line-height: 1.5;
 }
-#hours > span, #address > span {
-  font-size: 1.3em;
+#navigation > span, #address > span, #testimonials > span {
+  font-size: 1.2em;
+  font-family: Impact, 'Questrial', 'Arial Narrow Bold', sans-serif;
+  text-transform: uppercase;
+  color: #eaad1c;
 }
+
 #address p {
   color: #557c3e;
   font-size: .8em;
   line-height: 1.8;
 }
-#testimonials {
+#testimonials p {
   font-style: italic;
+	/*font-size: 1.3em;*/
 }
 #testimonials p:nth-child(2) {
   margin-top: 25px;
 }
+footer a:hover{
+color: #3ac341;
+}
 /* END FOOTER */
 
 /* HOME PAGE */
+.contact-img {
+	width: 100%;
+	max-height: 400px;
+}
 
 #main-content {
-    box-shadow: 0 0 30px #fff;
-    border: 2px solid #eaad1c;
+    /*box-shadow: 0 0 30px #fff;
+    border: 2px solid #eaad1c;*/
+		width: 100%;                       /*Checar el diseño de la parte*/
+    background: #08091e;
 }
+
 .row  div {
 	margin: 10px auto 10px;
 }
 
 #banner-tile, #bcards-tile, #map-tile {
 	height: 400px;
-	width: 80%;
+	width: 100%;
   margin-top: 15px;
 	margin-bottom: 15px;
 	position: relative;
-	border: 2px solid #eaad1c;
+	border: 2px solid #fff/*#eaad1c*/;
   border-radius: 7px;
 	overflow: hidden;
 }
@@ -243,13 +264,10 @@ figure {
 }
 
 #banner-tile {
-	/*background: url('../images/banner.jpg') no-repeat;    */
 	background-position: center;
 }
 
 #bcards-tile {
-	/*background: url('../images/feather-flags.jpg') no-repeat;*/
-   /* background-color: azure;*/
 	background-position: center;
 }
 
@@ -263,7 +281,7 @@ figure {
   font-size: 1em;
   background-color: #000;
   color: #fff;
-  opacity: .8;
+  opacity: 1;
 }
 
 #banner-tile span, #bcards-tile span, #map-tile span {
@@ -276,57 +294,40 @@ figure {
   padding: 2px;
   font-size: 1.1em;
   font-style: italic;
-  background-color:  #fff;
+  background-color:  #d0caca;
   color: #000;
-  opacity: .6;
+  opacity: 1;
 }
 
 .button {
-	-moz-box-shadow: 3px 4px 0px 0px #08091e;
-	-webkit-box-shadow: 3px 4px 0px 0px #08091e;
-	box-shadow: 3px 4px 0px 0px #08091e;
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #eaac1c), color-stop(1, #08091e));
-	background:-moz-linear-gradient(top, #eaac1c 5%, #08091e 100%);
-	background:-webkit-linear-gradient(top, #eaac1c 5%, #08091e 100%);
-	background:-o-linear-gradient(top, #eaac1c 5%, #08091e 100%);
-	background:-ms-linear-gradient(top, #eaac1c 5%, #08091e 100%);
-	background:linear-gradient(to bottom, #eaac1c 5%, #08091e 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#eaac1c', endColorstr='#08091e',GradientType=0);
-	background-color:#eaac1c;
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px;
-	border-radius:5px;
-	border:1px solid #eaac1c;
+	-moz-box-shadow: 0px 1px 0px 0px #fff6af;
+	-webkit-box-shadow: 0px 1px 0px 0px #fff6af;
+	box-shadow: 0px 1px 0px 0px #fff6af;
+	background-color:#f5a91b;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #f5a91b;
 	display:block;
 	cursor:pointer;
-	color:#ffffff;
+	color:#000;
 	font-family:Verdana;
-	font-size:16px;
+	font-size:15px;
 	font-weight:bold;
-	font-style:italic;
-	margin: 8px 8% 8px 8%;
-	padding:12px;
+	padding:6px 24px;
+  margin: 8px 8% 8px 8%;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #fff;
+	text-shadow:0px 1px 0px #ffee66;
 }
-
 .button:hover {
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #08091e), color-stop(1, #eaac1c));
-	background:-moz-linear-gradient(top, #08091e 5%, #eaac1c 100%);
-	background:-webkit-linear-gradient(top, #08091e 5%, #eaac1c 100%);
-	background:-o-linear-gradient(top, #08091e 5%, #eaac1c 100%);
-	background:-ms-linear-gradient(top, #08091e 5%, #eaac1c 100%);
-	background:linear-gradient(to bottom, #08091e 5%, #eaac1c 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#08091e', endColorstr='#eaac1c',GradientType=0);
-	background-color:#08091e;
+	background-color:#d1d2d4;
 }
-
 .button:active {
 	position:relative;
 	top:1px;
 }
-/* END HOME PAGE */
 
+/* END HOME PAGE */
 
 /***BANNERS PAGE **/
 .banner-item-tile {
@@ -354,11 +355,23 @@ figure {
   margin-bottom: 20px;
   max-width: 250px;
 }
-.banner-item-photo div {
+
+.contact-item-photo {
+  position: relative;
+  border: 2px solid #3f0c1f;
+  overflow: hidden;
+  padding: 0;
+  margin-right: -15px;
+  margin-left: auto;
+  margin-bottom: 20px;
+  /*max-width: 250px;*/
+}
+
+.banner-item-photo div, .contact-item-photo div {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 80px;
+  /*width: 80px;*/
   background-color: #557c3e;
   text-align: center;
 }
@@ -409,6 +422,8 @@ strong {
 /** CONTACT US PAGE ***/
 .quote {
   width: 50%;
+  padding: 5px auto;
+  margin: 5px auto;
 }
 .contact-item-sabiomfg ul {
   list-style: none;
@@ -433,6 +448,15 @@ strong {
 #myCarousel {
 		width: 100%;
 	}
+  .carousel img {
+	position: absolute;
+	border: 0px;
+  padding: 15px 0px;
+	opacity: 1;
+  transition: 1s;
+	-webkit-transition: 1s;
+}
+
 }
 
 @media (max-width: 767px){
@@ -440,6 +464,14 @@ strong {
 		padding-top: 10px;
 		height: 80px;
 	}
+	.carousel img {
+	position: absolute;
+	border: 0px;
+  padding: 15px 0px;
+	opacity: 1;
+  transition: 1s;
+	-webkit-transition: 1s;
+}
 
 	.navbar-brand h1 {
 		padding-top: 10px;
@@ -489,6 +521,14 @@ strong {
 #myCarousel {
 		width: 100%;
 	}
+	.carousel img {
+	position: absolute;
+	border: 0px;
+  padding: 15px 0px;
+	opacity: 1;
+  transition: 1s;
+	-webkit-transition: 1s;
+}
 
 #banner-tile, #bcards-tile, #map-tile {
         width: 100%;
